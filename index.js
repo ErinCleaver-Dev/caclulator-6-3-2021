@@ -7,14 +7,17 @@ class Calulator {
 
   add(num) {
     this.result +=num;
+    return this;
   }
 
   subtract(num) {
     this.result +=num;
+    return this;
   }
 
   clear() {
     this.result = 0;
+    return this;
   }
 
   print() {
@@ -27,11 +30,7 @@ calulator = new Calulator("My Calulator");
 
 // have fun with the calculator
 
-calulator.add(45);
-calulator.print();
-calulator.add(12);
-calulator.print();
-calulator.subtract(15);
-calulator.print();
-calulator.clear();
-calulator.print();
+calulator.add(45).print();
+calulator.add(12).print();;
+calulator.subtract(15).print();;
+calulator.clear().print();;
