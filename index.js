@@ -6,15 +6,15 @@ class Calulator {
   }
 
   add(num) {
-    // summation code
+    this.result +=num;
   }
 
   subtract(num) {
-    // subtraction code
+    this.result +=num;
   }
 
   clear() {
-    //clear result
+    this.result = 0;
   }
 
   print() {
@@ -26,3 +26,14 @@ class Calulator {
 
 
 // have fun with the calculator
+
+calulator = new Calulator("My Calulator");
+
+calulator.add(45);
+calulator.print();
+calulator.add(12);
+calulator.print();
+calulator.subtract(15);
+calulator.print();
+calulator.clear();
+calulator.print();
