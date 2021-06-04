@@ -23,11 +23,9 @@ class Calulator {
 }
 
 // delcare and instantiate class
-
+calulator = new Calulator("My Calulator");
 
 // have fun with the calculator
-
-calulator = new Calulator("My Calulator");
 
 calulator.add(45);
 calulator.print();
